@@ -1,18 +1,12 @@
-function login(){
+function login() {
+    const username = document.getElementById("username").value.trim();
+    const password = document.getElementById("password").value.trim();
 
-    const user=document.getElementById("username").value.trim();
-
-    const pass=document.getElementById("password").value.trim();
-
-    if(user==="" || pass===""){
-
-        alert("Please enter Username & Password");
-
+    if (!username || !password) {
+        alert("Please enter Username and Password.");
         return;
-
     }
 
-    // এখন শুধু ডেমো
-    window.location.href="chat.html";
-
+    // পরে এখানে আসল Login System হবে
+    window.location.href = "chat.html";
 }
